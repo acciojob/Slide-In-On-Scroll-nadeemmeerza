@@ -57,6 +57,18 @@
         if (callNow) func.apply(context, args);
       };
     }
+	  function slide() {
+	  	window.addEventlistener('scroll',(e)=>{
+			let position = window.scrollY;
+			
+		let leftImage = document.getElementByClass('align-left');	
+			leftImage.classList.add("active");
+			leftImage.style.transform(translateX(30%) scale(0.95));
+		})
+	  }
+
+	 slide(); 
+	  
 
   </script>
 
