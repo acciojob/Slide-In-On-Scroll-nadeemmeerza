@@ -43,6 +43,8 @@
   </div>
 
   <script>
+
+	  document.getElementByClass('align-left').classList.add("active");
     function debounce(func, wait = 20, immediate = true) {
       var timeout;
       return function() {
@@ -62,7 +64,7 @@
 			let position = window.scrollY;
 			
 		let leftImage = document.getElementByClass('align-left');	
-			leftImage.classList.add("active");
+			
 			leftImage.style.transform(translateX(30%) scale(0.95));
 		})
 	  }
